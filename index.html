@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Whack-A-Mole</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="scoreboard">
+      <p class="score-text">Score: <span id="scoreDisplay">0</span></p>
+      <p class="timer-text">Time Remaining: <span id="timerDisplay">10</span> seconds</p>
+    </div>
+
+    <button id="startButton" class="game-button" onclick="startGame()">Start Game</button>
+
+    <!-- Game Grid -->
+    <div class="grid-container" id="gameGrid">
+      <!-- Mole-Hole Containers will be dynamically added here -->
+    </div>
+
+    <div id="finalScorePopup" class="popup hidden">
+      <div class="popup-content">
+        <h2>Time’s up!</h2>
+        <p>Your score: <span id="finalScoreDisplay"></span></p>
+        <button onclick="startGame()" onkeydown="if(event.key === 'Enter') startGame()">Play Again</button>
+      </div>
+    </div>        
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

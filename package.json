@@ -1,0 +1,30 @@
+{
+  "name": "whack-a-mole",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-packager ."
+  },
+  "keywords": [
+  "whack-a-mole",
+  "game",
+  "electron",
+  "arcade"
+],
+  "author": "Jia Hao Foo",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^35.2.1",
+    "electron-packager": "^17.1.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhfoo820/basic-whack-a-mole.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jhfoo820/basic-whack-a-mole/issues"
+  },
+  "homepage": "https://github.com/jhfoo820/basic-whack-a-mole#readme",
+  "description": ""
+}
